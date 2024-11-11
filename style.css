@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(231, 189, 49), #d6a315);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.score p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.display {
+    margin: 20px 0;
+}
+
+.choice-btn {
+    background: #f5f5f5;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice-btn:hover {
+    background-color: #fcdb4c;
+}
+
+.choice-btn i {
+    font-size: 2rem;
+    color: #333;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#user-choice span,
+#computer-choice span,
+#result-message span {
+    font-weight: bold;
+    color: #f06;
+}
+
+@media (max-width:450px) {
+    .container {
+        max-width: 90vw;
+        padding: 20px;
+    }
+
+}
